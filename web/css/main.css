@@ -1,0 +1,61 @@
+.mdl-textfield__input {
+    display: inline-block;
+}
+.mdl-textfield__input.pace-minutes {
+    width: 20px;
+    text-align: right;
+}
+.mdl-textfield__input.seconds {
+    width: 168px;
+    width: calc(100% - 28px);
+}
+
+.mdl-textfield__text {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: inline-block;   
+    font-size: 16px;
+    margin: 0;
+    padding: 4px 0;
+    width: 100px;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+}
+.mdl-textfield__text.separator {
+    width: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 0;
+}
+.mdl-textfield__text.unit {
+    width: 60px;
+    border-bottom: none;
+    color: rgba(0,0,0,.26);
+}
+
+.mdl-card {
+    width: 100%;
+}
+
+.mdl-card__title {
+    background: url('/image/unsplash_hoCXpPUMCoE_.jpg') center;
+}
+.card-pace .mdl-card__title {
+    background-position: -2400px -800px;
+}
+.card-speed .mdl-card__title {
+    background-position: 1030px -2500px;
+}
+.card-table .mdl-card__title {
+    background-position: -1390px 370px;
+}
+
+.mdl-data-table {
+    width: 100%;
+}
+.mdl-data-table .unit {
+    color: rgba(0,0,0,.26);
+    font-size: 14px;
+    font-weight: lighter;
+}
