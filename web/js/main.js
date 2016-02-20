@@ -114,6 +114,9 @@ var PaceForm = React.createClass({
   href: function() {
     return this.state.data.minutes + this.separator + this.state.data.seconds;
   },
+  link: function() {
+    return window.location.protocol + '//' + window.location.host + '/' + this.href();
+  },
   isValidMinutes: function(value) {
     return (! isNaN(value) 
       && -1 === value.indexOf('.') 
@@ -182,7 +185,7 @@ var PaceForm = React.createClass({
           <a href={"#" + this.href()}
             className=""
           >
-            Lien direct
+            {this.link()}
           </a>
         </div>
       </div>
@@ -197,6 +200,9 @@ var SpeedForm = React.createClass({
   },
   href: function() {
     return this.state.data.value;
+  },
+  link: function() {
+    return window.location.protocol + '//' + window.location.host + '/#' + this.href();
   },
   isValid: function(value) {
     return (! isNaN(value) 
@@ -241,7 +247,7 @@ var SpeedForm = React.createClass({
           <a href={"#" + this.href()}
             className=""
           >
-            Lien direct
+            {this.link()}
           </a>
         </div>
       </div>
