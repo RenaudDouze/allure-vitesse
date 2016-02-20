@@ -10,6 +10,21 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.green-red.min.css" />
   <link rel="stylesheet" href="css/main.css">
+
+  <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
+  <script type="text/javascript" src="/tarteaucitron/tarteaucitron.services.piwik.js"></script>
+
+  <script type="text/javascript">
+  tarteaucitron.init({
+      "hashtag": "#tarteaucitron", /* Ouverture automatique du panel avec le hashtag */
+      "highPrivacy": false, /* désactiver le consentement implicite (en naviguant) ? */
+      "orientation": "bottom", /* le bandeau doit être en haut (top) ou en bas (bottom) ? */
+      "adblocker": false, /* Afficher un message si un adblocker est détecté */
+      "showAlertSmall": true, /* afficher le petit bandeau en bas à droite ? */
+      "cookieslist": true, /* Afficher la liste des cookies installés ? */
+      "removeCredit": false /* supprimer le lien vers la source ? */
+  });
+  </script>
 </head>
 <body>
   <div id="container"></div>
@@ -135,5 +150,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
 
   <script type="text/babel" src="js/main.js"></script>
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    tarteaucitron.user.piwikId = '3';
+    (tarteaucitron.job = tarteaucitron.job || []).push('piwik');
+  </script>
+  <noscript><p><img src="//piwik.renauddouze.fr/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
 </body>
 </html>
