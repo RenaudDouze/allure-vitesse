@@ -115,7 +115,7 @@ var PaceForm = React.createClass({
     return this.state.data.minutes + this.separator + this.state.data.seconds;
   },
   link: function() {
-    return window.location.protocol + '//' + window.location.host + '/' + this.href();
+    return window.location.protocol + '//' + window.location.host + '/#' + this.href();
   },
   isValidMinutes: function(value) {
     return (! isNaN(value) 
